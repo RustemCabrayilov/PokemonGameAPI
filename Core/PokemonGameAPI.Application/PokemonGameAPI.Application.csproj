@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Class1.cs" />
+      <Compile Remove="Abstraction\Services\Common\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PokemonGameAPI.Domain\PokemonGameAPI.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="13.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Abstraction\Services\Common\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Abstraction\Services\Common\**" />
+    </ItemGroup>
+
+</Project>

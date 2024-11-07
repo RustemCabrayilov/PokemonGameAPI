@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-PokemonGameAPI",
+      "appliesTo": "Presentation/PokemonGameAPI.API/",
+      "type": "launch"
+    }
+  ]
+}
