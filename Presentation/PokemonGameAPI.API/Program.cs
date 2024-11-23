@@ -10,14 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddPersistenceServices(builder.Configuration);
-builder.Services.AddInfrastructureServices();
+builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddApplicationServices();
-/*builder.Services.AddIdentity<AppUser, AppRole>(opts =>
+builder.Logging.AddCustomSerilog();
+builder.Services.AddIdentity<AppUser, AppRole>(opts =>
 {
    opts.Password.RequireDigit = true;
    opts.Password.RequireLowercase = false;
@@ -26,7 +26,7 @@ builder.Services.AddApplicationServices();
    opts.Password.RequiredLength = 6;
 
 }).AddEntityFrameworkStores<AppDbContext>()
-.AddDefaultTokenProviders();*/
+.AddDefaultTokenProviders();
 builder.Services.AddExceptionHandler<BadRequestExceptionHandler>();
 builder.Services.AddExceptionHandler<NotFoundExceptionHandler>();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();

@@ -9,6 +9,8 @@
     <ItemGroup>
       <Compile Remove="Class1.cs" />
       <Compile Remove="Entities\Enums\**" />
+      <Compile Remove="Enums\GameResult.cs" />
+      <Compile Remove="Enums\PokemonType.cs" />
     </ItemGroup>
 
     <ItemGroup>

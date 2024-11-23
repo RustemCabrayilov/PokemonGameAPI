@@ -21,4 +21,13 @@
       <ProjectReference Include="..\..\Infrastructure\PokemonGameAPI.Persistence\PokemonGameAPI.Persistence.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Documents\Badges\" />
+      <Folder Include="Logs\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Logs\webapi-20241119.log" />
+    </ItemGroup>
+
 </Project>

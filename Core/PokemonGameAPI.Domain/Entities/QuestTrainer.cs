@@ -1,9 +1,9 @@
 ﻿namespace PokemonGameAPI.Domain.Entities;
 
-public class TrainerPokemon:BaseEntity
+public class QuestTrainer:BaseEntity
 {
+    public Quest Quest { get; set; }
+    public Guid QuestId { get; set; }
     public Trainer Trainer { get; set; }
     public Guid TrainerId { get; set; }
-    public Pokemon Pokemon { get; set; }
-    public Guid PokemonId { get; set; }
 }

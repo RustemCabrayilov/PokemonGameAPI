@@ -13,3 +13,9 @@ C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Applica
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Application\obj\Debug\net8.0\refint\PokemonGameAPI.Application.dll
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Application\obj\Debug\net8.0\PokemonGameAPI.Application.pdb
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Application\obj\Debug\net8.0\ref\PokemonGameAPI.Application.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Application\obj\Debug\net8.0\PokemonGameAPI.Application.sourcelink.json
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Application\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Application\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Application\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Application\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Application\bin\Debug\net8.0\Microsoft.Extensions.Features.dll

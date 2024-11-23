@@ -1,4 +1,6 @@
-﻿using PokemonGameAPI.Domain.Entities;
+﻿using PokemonGameAPI.Application.Abstraction.Services.Category;
+using PokemonGameAPI.Application.Abstraction.Services.Skill;
+using PokemonGameAPI.Domain.Entities;
 using PokemonGameAPI.Domain.Enums;
 namespace PokemonGameAPI.Application.Abstraction.Services.Pokemon;
 public record PokemonResponseDto
@@ -8,9 +10,10 @@ public record PokemonResponseDto
     int EvolutionLevel ,
     int HP ,
     int Attack ,
-    int Defense ,
+    int PokemonLevel ,
+    AttitudeType AttitudeType,
+    bool ReadyForBattle,
     RarityEnum RarityType ,
-    Domain.Entities.Category Category,
-    Domain.Entities.Skill Skill,
-    int Level  = 1
+    CategoryResponseDto Category,
+    SkillResponseDto Skill
 );

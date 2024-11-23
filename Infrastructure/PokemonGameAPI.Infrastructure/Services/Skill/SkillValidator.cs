@@ -2,7 +2,7 @@
 using PokemonGameAPI.Application.Abstraction.Services.Skill;
 using PokemonGameAPI.Domain.Entities;
 
-namespace PokemonGameAPI.Infrastructure.Validators;
+namespace PokemonGameAPI.Infrastructure.Services.Skill;
 
 public class SkillValidator:AbstractValidator<SkillRequestDto>
 {

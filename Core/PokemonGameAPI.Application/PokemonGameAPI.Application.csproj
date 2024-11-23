@@ -9,6 +9,8 @@
     <ItemGroup>
       <Compile Remove="Class1.cs" />
       <Compile Remove="Abstraction\Services\Common\**" />
+      <Compile Remove="Abstraction\Services\IGymLeaderService.cs" />
+      <Compile Remove="Abstraction\Services\Auth\SignInResponseDto.cs" />
     </ItemGroup>
 
     <ItemGroup>
@@ -25,6 +27,12 @@
 
     <ItemGroup>
       <None Remove="Abstraction\Services\Common\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.Http.Features">
+        <HintPath>..\..\..\..\..\..\..\..\Program Files\dotnet\shared\Microsoft.AspNetCore.App\8.0.1\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

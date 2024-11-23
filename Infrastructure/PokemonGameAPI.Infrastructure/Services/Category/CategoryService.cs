@@ -30,11 +30,10 @@ public class CategoryService(IGenericRepository<Domain.Entities.Category> _categ
         if (!result.IsValid) throw new ValidationException(result.Errors);
         var entity = await _categoryRepository.GetAsync(id);
         if (entity is null) throw new NotFoundException("Entity not found");
-        var entityToUpdate=_mapper.Map<Domain.Entities.Category>(dto);
-        entityToUpdate.Id = entity.Id;
-        _categoryRepository.Update(entityToUpdate);
+        _mapper.Map(dto,entity);
+        _categoryRepository.Update(entity);
         _unitOfWork.SaveChanges();
-        var outDto=_mapper.Map<CategoryResponseDto>(entityToUpdate);
+        var outDto=_mapper.Map<CategoryResponseDto>(entity);
         return outDto;
     }
 

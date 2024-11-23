@@ -10,3 +10,4 @@ C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Domain\
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Domain\obj\Debug\net8.0\refint\PokemonGameAPI.Domain.dll
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Domain\obj\Debug\net8.0\PokemonGameAPI.Domain.pdb
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Domain\obj\Debug\net8.0\ref\PokemonGameAPI.Domain.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Core\PokemonGameAPI.Domain\obj\Debug\net8.0\PokemonGameAPI.Domain.sourcelink.json

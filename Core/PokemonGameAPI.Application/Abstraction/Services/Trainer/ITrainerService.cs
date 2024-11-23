@@ -7,4 +7,5 @@ public interface ITrainerService
     Task<TrainerResponseDto> RemoveAsync(Guid id);
     Task<TrainerResponseDto> GetAsync(Guid id);
     Task<IList<TrainerResponseDto>> GetAllAsync();
+    Task<TrainerResponseDto> AssignPokemonAsync(TrainerPokemonDto dto);
 }

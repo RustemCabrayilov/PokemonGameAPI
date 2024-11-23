@@ -2,7 +2,7 @@
 using PokemonGameAPI.Application.Abstraction.Services.Category;
 using PokemonGameAPI.Domain.Entities;
 
-namespace PokemonGameAPI.Infrastructure.Validators;
+namespace PokemonGameAPI.Infrastructure.Services.Category;
 
 public class CategoryValidator:AbstractValidator<CategoryRequestDto>
 {

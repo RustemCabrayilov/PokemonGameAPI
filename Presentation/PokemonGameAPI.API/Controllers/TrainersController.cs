@@ -36,4 +36,11 @@ public class TrainersController(ITrainerService _trainerService) : ControllerBas
         var response = await _trainerService.RemoveAsync(id);
         return Ok(response);
     }
+
+    [HttpPost("assign-pokemon")]
+    public async Task<IActionResult> AssignPokemon(TrainerPokemonDto requestDto)
+    {
+        var response=await _trainerService.AssignPokemonAsync(requestDto);
+        return Ok(response);
+    }
 }

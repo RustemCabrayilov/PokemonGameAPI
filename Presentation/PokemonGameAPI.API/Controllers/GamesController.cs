@@ -1,10 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PokemonGameAPI.Application.Abstraction.Repository;
 using PokemonGameAPI.Application.Abstraction.Services.Game;
+using PokemonGameAPI.Application.Abstraction.UnitOfWork;
+using PokemonGameAPI.Domain.Entities;
 
 namespace PokemonGameAPI.API.Controllers;
 [ApiController]
 [Route("api/[controller]")]
-public class GamesController(IGameService _gameService) : ControllerBase
+public class GamesController(IGameService _gameService,
+    IGenericRepository<Arena> _arenarepo,
+    IUnitOfWork _unitOfWork) : ControllerBase
 {
     [HttpGet]
     public async Task<IActionResult> Get()
@@ -34,6 +39,25 @@ public class GamesController(IGameService _gameService) : ControllerBase
     public async Task<IActionResult> Delete(Guid id)
     {
         var response = await _gameService.RemoveAsync(id);
+        return Ok(response);
+    }
+
+    [HttpGet("startBattle/{trainer1Id}/{trainer2Id}")]
+    public async Task<IActionResult> StartBattle(Guid trainer1Id, Guid trainer2Id)
+    {
+        var response = await _gameService.StartBattleAsync(trainer1Id,trainer2Id);
+        return Ok(response);
+    }
+    [HttpPost("fight")]
+    public async Task<IActionResult> Fight(BattleResultRequestDto requestDto)
+    {
+        var response = await _gameService.FightAsync(requestDto);
+        return Ok(response);
+    }
+    [HttpPost("reset-game")]
+    public async Task<IActionResult> ResetGym(ResetGameDto requestDto)
+    {
+        var response = await _gameService.ResetAsync(requestDto);
         return Ok(response);
     }
 }

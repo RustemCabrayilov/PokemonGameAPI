@@ -2,7 +2,7 @@
 
 namespace PokemonGameAPI.Domain.Entities.Identity;
 
-public class AppUser:IdentityUser<Guid>
+public class AppUser:IdentityUser<string>
 {
     public string LastIPAddress { get; set; }
 }

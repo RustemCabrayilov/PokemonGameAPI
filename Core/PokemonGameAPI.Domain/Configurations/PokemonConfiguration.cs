@@ -12,5 +12,7 @@ public class PokemonConfiguration:IEntityTypeConfiguration<Pokemon>
         builder.Property(x => x.Attack).IsRequired();
         builder.Property(x => x.Defense).IsRequired();
         builder.Property(x => x.EvolutionLevel).IsRequired();
+        builder.Property(x => x.AttitudeType).IsRequired().HasConversion<string>();
+        builder.Property(x => x.RarityType).IsRequired().HasConversion<string>();
     }
 }

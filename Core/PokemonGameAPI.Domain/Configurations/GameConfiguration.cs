@@ -11,11 +11,11 @@ public class GameConfiguration:IEntityTypeConfiguration<Game>
         builder.Property(x => x.Trainer1Id).IsRequired();
         builder.Property(x => x.Trainer2Id).IsRequired();
         builder.HasOne(x=>x.Trainer1).
-            WithMany().
+            WithMany(x=>x.Trainer1Games).
             HasForeignKey(x=>x.Trainer1Id).
             OnDelete(DeleteBehavior.Restrict);
         builder.HasOne(x=>x.Trainer2).
-            WithMany().
+            WithMany(x=>x.Trainer2Games).
             HasForeignKey(x=>x.Trainer2Id).
             OnDelete(DeleteBehavior.Restrict);    
     }

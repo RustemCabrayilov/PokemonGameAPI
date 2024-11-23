@@ -8,6 +8,6 @@ public class TrainerConfiguration:IEntityTypeConfiguration<Trainer>
 {
     public void Configure(EntityTypeBuilder<Trainer> builder)
     {
-        builder.Property(x=>x.AppUserId).IsRequired();
+        builder.Property(x=>x.UserId).IsRequired();
     }
 }

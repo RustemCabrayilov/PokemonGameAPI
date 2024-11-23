@@ -8,6 +8,8 @@ public class GameMappingProfile:Profile
     {
         CreateMap<GameRequestDto, GameResponseDto>();
         CreateMap<GameRequestDto, Domain.Entities.Game>();
-        CreateMap<Domain.Entities.Game, GameResponseDto>();
+        CreateMap<Domain.Entities.Game, GameResponseDto>()
+            .ForMember(dest => dest.ArenaName, opt => opt.MapFrom(src => src.Arena.Name));
+        CreateMap<Domain.Entities.BattleResult, BattleResultResponseDto>();
     }
 }

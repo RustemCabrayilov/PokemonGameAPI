@@ -4,6 +4,10 @@ C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameA
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\bin\Debug\net8.0\PokemonGameAPI.Persistence.pdb
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\bin\Debug\net8.0\PokemonGameAPI.Application.dll
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\bin\Debug\net8.0\PokemonGameAPI.Domain.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\bin\Debug\net8.0\Microsoft.Net.Http.Headers.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\bin\Debug\net8.0\Microsoft.Extensions.Features.dll
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\bin\Debug\net8.0\PokemonGameAPI.Application.pdb
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\bin\Debug\net8.0\PokemonGameAPI.Domain.pdb
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\PokemonGameAPI.Persistence.csproj.AssemblyReference.cache
@@ -11,9 +15,11 @@ C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameA
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\PokemonGameAPI.Persistence.AssemblyInfoInputs.cache
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\PokemonGameAPI.Persistence.AssemblyInfo.cs
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\PokemonGameAPI.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\PokemonGameAPI.Persistence.sourcelink.json
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\PokemonGameAPI.Persistence.csproj.CopyComplete
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\PokemonGameAPI.Persistence.dll
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\refint\PokemonGameAPI.Persistence.dll
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\PokemonGameAPI.Persistence.pdb
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\PokemonGameAPI.Persistence.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\obj\Debug\net8.0\ref\PokemonGameAPI.Persistence.dll
+C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Persistence\bin\Debug\net8.0\System.IO.Pipelines.dll

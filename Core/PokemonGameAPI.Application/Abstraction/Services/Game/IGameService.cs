@@ -7,4 +7,7 @@ public interface IGameService
     Task<GameResponseDto> RemoveAsync(Guid id);
     Task<GameResponseDto> GetAsync(Guid id);
     Task<IList<GameResponseDto>> GetAllAsync();
+    Task<GameResponseDto> StartBattleAsync(Guid attackerId, Guid defenderId);
+    Task<BattleResultResponseDto> FightAsync(BattleResultRequestDto requestDto);
+    ValueTask<bool> ResetAsync(ResetGameDto requestDto);
 }
