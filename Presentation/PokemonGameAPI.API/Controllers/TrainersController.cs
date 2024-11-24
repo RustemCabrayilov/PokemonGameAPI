@@ -43,4 +43,10 @@ public class TrainersController(ITrainerService _trainerService) : ControllerBas
         var response=await _trainerService.AssignPokemonAsync(requestDto);
         return Ok(response);
     }
+    [HttpPost("trainer-quests/{trainerId}")]
+    public async Task<IActionResult> GetQuestsForTrainer(Guid trainerId)
+    {
+        var response=await _trainerService.GetQuestsForTrainer(trainerId);
+        return Ok(response);
+    }
 }

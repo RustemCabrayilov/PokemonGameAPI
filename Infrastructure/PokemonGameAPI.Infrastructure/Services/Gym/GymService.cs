@@ -77,8 +77,13 @@ public class GymService(
     public async Task<GymResponseDto> StartBattleAsync(Guid mainTrainerId, Guid gymId)
     {
         var trainer = await _trainerRepository.GetAsync(mainTrainerId);
+        if(trainer is null) throw new NotFoundException("Trainer not found");
         var gym = await _gymRepository.GetAsync(gymId);
-        if (gym.GymLevel != trainer.TrainerLevel) throw new BadRequestException("Gym level is higher than yours");
+        if(gym is null) throw new NotFoundException("Gym not found");
+        var playerPokemon = await GetReadyPokemonForTrainer(mainTrainerId);
+        if (playerPokemon is null)
+            throw new NotFoundException($"No battle-ready Pokemon found for Trainer {mainTrainerId}");
+        if (gym.GymLevel >= playerPokemon.PokemonLevel) throw new BadRequestException("Gym level is higher than your pokemon level");
         trainer.ReadyForGymBattle = true;
         _trainerRepository.Update(trainer);
         _unitOfWork.SaveChanges();
@@ -90,9 +95,7 @@ public class GymService(
             Description = $"Fight with {gymLeader.Name} gym leader",
             GymId = gym.Id
         };
-        var playerPokemon = await GetReadyPokemonForTrainer(mainTrainerId);
-        if (playerPokemon is null)
-            throw new NotFoundException($"No battle-ready Pokemon found for Trainer {mainTrainerId}");
+      
         int currentGymLeaderPokemonIndex = 0;
         _pokemons = GetReadyPokemonForGymLeader(gymLeader.Id);
         var gymLeaderPokemon = _pokemons[currentGymLeaderPokemonIndex];
@@ -124,8 +127,8 @@ public class GymService(
         var gymLeader = await _gymLeaderRepository.GetAsync(gym.GymLeaderId);
         if (gymLeader is null) throw new NotFoundException("Gym leader not found");
         var trainerPokemon = await GetReadyPokemonForTrainer(requestDto.TrainerId);
-        if (trainerPokemon is null) throw new NotFoundException("Tranier pokemon not found");
-        int currentGymLeaderPokemonIndex = 1;
+        if (trainerPokemon is null) throw new NotFoundException($"No battle-ready Pokémon found for Trainer {requestDto.TrainerId}");
+        int currentGymLeaderPokemonIndex = 0;
         var gymLeaderPokemons=GetReadyPokemonForGymLeader(gymLeader.Id);
         var gymLeaderPokemon= gymLeaderPokemons[currentGymLeaderPokemonIndex];
         var bossFightResult =
@@ -134,7 +137,7 @@ public class GymService(
         if (gymLeaderPokemon.HP <= 0)
         {
             currentGymLeaderPokemonIndex++;
-            if (currentGymLeaderPokemonIndex >= _pokemons.Count)
+            if (currentGymLeaderPokemonIndex >= gymLeaderPokemons.Count)
             {
                 bossFightResult.Winner = ParticipantType.Trainer;
                 bossFightResult.WinnerId = trainer.Id;
@@ -142,6 +145,9 @@ public class GymService(
                 bossFightResult.LooserId = gymLeader.Id;
                 bossFightResult.WinnerDamages = requestDto.TrainerDamages;
                 bossFightResult.LooserDamages = requestDto.GymLeaderDamages;
+                trainerPokemon.PokemonLevel += new Random().Next(1,3);
+                _pokemonRepository.Update(trainerPokemon);
+                _unitOfWork.SaveChanges();
             }
         }
        else if (trainerPokemon.HP <= 0)
@@ -177,7 +183,7 @@ public class GymService(
      var pokemon1 = await _pokemonRepository.GetAsync(requestDto.Pokemon1Id);
      if (pokemon1 is null) throw new NotFoundException("Pokemon 1 not found");
      var pokemon2 = await _pokemonRepository.GetAsync(requestDto.Pokemon2Id);
-     if (pokemon1 is null) throw new NotFoundException("Pokemon 2 not found");
+     if (pokemon2 is null) throw new NotFoundException("Pokemon 2 not found");
         pokemon1.HP = pokemon1.PokemonLevel * 10 + (int)pokemon1.RarityType * 50;
         pokemon2.HP = pokemon2.PokemonLevel * 10 + (int)pokemon2.RarityType * 50;
         pokemon1.ReadyForBattle = false;
@@ -187,6 +193,7 @@ public class GymService(
         await _unitOfWork.SaveChangesAsync();
         var gymField = await _gymFieldRepository.GetAll().FirstOrDefaultAsync(x=>x.GymId==requestDto.GymId);
         _gymFieldRepository.Remove(gymField);
+       await _unitOfWork.SaveChangesAsync();
         return true;
     }
     /*private async Task<Domain.Entities.Pokemon?> GetReadyPokemonForBoss(Guid gymLeaderId)

@@ -37,4 +37,10 @@ public class QuestsController(IQuestService _questService) : ControllerBase
         var response = await _questService.RemoveAsync(id);
         return Ok(response);
     }
+[HttpGet("check/{id}")]
+    public async Task<IActionResult> CheckQuest(Guid id)
+    {
+         await _questService.CheckQuestAsync(id);
+        return Ok();
+    }
 }

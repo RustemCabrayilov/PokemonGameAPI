@@ -2,5 +2,5 @@
 
 public record QuestRequestDto(
     string Description,
-    bool Done
+    int TargetDamage
 );

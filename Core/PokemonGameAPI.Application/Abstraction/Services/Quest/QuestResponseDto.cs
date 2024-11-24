@@ -3,5 +3,5 @@
 public record QuestResponseDto(
     Guid Id,
     string Description,
-    bool Done
+    int TargetDamage
     );

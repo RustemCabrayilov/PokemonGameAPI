@@ -8,6 +8,6 @@ public class QuestConfiguration:IEntityTypeConfiguration<Quest>
 {
     public void Configure(EntityTypeBuilder<Quest> builder)
     {
-        builder.Property(x => x.KillCount).IsRequired();
+        builder.Property(x => x.Description).IsRequired();
     }
 }

@@ -2,7 +2,7 @@
 
 namespace PokemonGameAPI.Application.Abstraction.Services.Document;
 
-public class DocumentRequestDto(
+public record DocumentRequestDto(
     Guid Id,
     DocumentType DocumentType,
     string Path,

@@ -307,7 +307,7 @@ namespace PokemonGameAPI.Persistence.Migrations
                     b.ToTable("Documents");
                 });
 
-            modelBuilder.Entity("PokemonGameAPI.Domain.Entities.EvaluationPokemon", b =>
+            modelBuilder.Entity("PokemonGameAPI.Domain.Entities.EvolutionPokemon", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -317,6 +317,12 @@ namespace PokemonGameAPI.Persistence.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("Defense")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EvolutionLevel")
+                        .HasColumnType("int");
+
+                    b.Property<int>("HP")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -330,7 +336,7 @@ namespace PokemonGameAPI.Persistence.Migrations
 
                     b.HasIndex("PokemonId");
 
-                    b.ToTable("EvaluationPokemon");
+                    b.ToTable("EvolutionPokemon");
                 });
 
             modelBuilder.Entity("PokemonGameAPI.Domain.Entities.Game", b =>
@@ -557,14 +563,14 @@ namespace PokemonGameAPI.Persistence.Migrations
                     b.Property<int>("Defense")
                         .HasColumnType("int");
 
-                    b.Property<int>("EvaluationCount")
-                        .HasColumnType("int");
-
                     b.Property<int>("EvolutionLevel")
                         .HasColumnType("int");
 
                     b.Property<int>("HP")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsEvolution")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -620,13 +626,11 @@ namespace PokemonGameAPI.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("CurrentKillCount")
-                        .HasColumnType("int");
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Done")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("KillCount")
+                    b.Property<int>("TargetDamage")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -639,6 +643,12 @@ namespace PokemonGameAPI.Persistence.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("CurrentDamage")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Done")
+                        .HasColumnType("bit");
 
                     b.Property<Guid>("QuestId")
                         .HasColumnType("uniqueidentifier");
@@ -830,7 +840,7 @@ namespace PokemonGameAPI.Persistence.Migrations
                     b.Navigation("Gym");
                 });
 
-            modelBuilder.Entity("PokemonGameAPI.Domain.Entities.EvaluationPokemon", b =>
+            modelBuilder.Entity("PokemonGameAPI.Domain.Entities.EvolutionPokemon", b =>
                 {
                     b.HasOne("PokemonGameAPI.Domain.Entities.Pokemon", "Pokemon")
                         .WithMany("EvaluationPokemons")

@@ -16,7 +16,116 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbe1ea12-b5f0-4093-8d8c-004f260932b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Quest/QuestTrainerDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PokemonGameAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PokemonGameAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Document/DocumentRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Document/DocumentRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/EvaluationPokemon/EvolutionPokemonMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/EvaluationPokemon/EvolutionPokemonMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Quest/IQuestService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Quest/IQuestService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Quest/QuestMappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Quest/QuestMappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Quest/QuestRequestDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Quest/QuestRequestDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Quest/QuestResponseDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Quest/QuestResponseDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Trainer/ITrainerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Trainer/ITrainerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Trainer/TrainerResponseDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/Abstraction/Services/Trainer/TrainerResponseDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/bin/Debug/net8.0/PokemonGameAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/bin/Debug/net8.0/PokemonGameAPI.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/bin/Debug/net8.0/PokemonGameAPI.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/bin/Debug/net8.0/PokemonGameAPI.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/bin/Debug/net8.0/PokemonGameAPI.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/bin/Debug/net8.0/PokemonGameAPI.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/bin/Debug/net8.0/PokemonGameAPI.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/bin/Debug/net8.0/PokemonGameAPI.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/PokemonGameAPI.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/ref/PokemonGameAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/ref/PokemonGameAPI.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/refint/PokemonGameAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/Debug/net8.0/refint/PokemonGameAPI.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/PokemonGameAPI.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/PokemonGameAPI.Application.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/Configurations/QuestConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/Configurations/QuestConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/Entities/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/Entities/Quest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/Entities/QuestTrainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/Entities/QuestTrainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/bin/Debug/net8.0/PokemonGameAPI.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/bin/Debug/net8.0/PokemonGameAPI.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/bin/Debug/net8.0/PokemonGameAPI.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/bin/Debug/net8.0/PokemonGameAPI.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/PokemonGameAPI.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/PokemonGameAPI.Domain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/PokemonGameAPI.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/PokemonGameAPI.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/PokemonGameAPI.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/PokemonGameAPI.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/PokemonGameAPI.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/PokemonGameAPI.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/PokemonGameAPI.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/PokemonGameAPI.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/ref/PokemonGameAPI.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/ref/PokemonGameAPI.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/refint/PokemonGameAPI.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/Debug/net8.0/refint/PokemonGameAPI.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/PokemonGameAPI.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/PokemonGameAPI.Domain.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/PokemonGameAPI.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Game/GameService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Game/GameService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Gym/GymService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Gym/GymService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Pokemon/PokemonService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Pokemon/PokemonService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Quest/QuestService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Quest/QuestService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Trainer/TrainerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Trainer/TrainerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/bin/Debug/net8.0/PokemonGameAPI.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/PokemonGameAPI.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/ref/PokemonGameAPI.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/ref/PokemonGameAPI.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/refint/PokemonGameAPI.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/Debug/net8.0/refint/PokemonGameAPI.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/PokemonGameAPI.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/PokemonGameAPI.Infrastructure.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/bin/Debug/net8.0/PokemonGameAPI.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/PokemonGameAPI.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/ref/PokemonGameAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/ref/PokemonGameAPI.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/refint/PokemonGameAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/Debug/net8.0/refint/PokemonGameAPI.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/PokemonGameAPI.Persistence.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/PokemonGameAPI.Persistence.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Persistence/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/Controllers/QuestsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/Controllers/QuestsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/Controllers/TrainersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/Controllers/TrainersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.API.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Persistence.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/bin/Debug/net8.0/PokemonGameAPI.Persistence.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/PokemonGameAPI.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/ref/PokemonGameAPI.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/ref/PokemonGameAPI.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/refint/PokemonGameAPI.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/Debug/net8.0/refint/PokemonGameAPI.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/PokemonGameAPI.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/PokemonGameAPI.API.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PokemonGameAPI.API/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,6 +404,9 @@
       <workItem from="1732224484096" duration="9079000" />
       <workItem from="1732266117661" duration="1299000" />
       <workItem from="1732312373420" duration="8587000" />
+      <workItem from="1732432664810" duration="5001000" />
+      <workItem from="1732442717720" duration="4492000" />
+      <workItem from="1732447428319" duration="3281000" />
     </task>
     <task id="LOCAL-00001" summary="Modellings|Services|Validations">
       <option name="closed" value="true" />
@@ -433,52 +545,52 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Trainer/TrainerService.cs</url>
-          <line>28</line>
+          <line>31</line>
           <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Trainer\TrainerService.cs" containingFunctionPresentation="Method 'CreateAsync'">
             <startOffsets>
-              <option value="1285" />
+              <option value="1488" />
             </startOffsets>
             <endOffsets>
-              <option value="1322" />
+              <option value="1525" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Trainer/TrainerService.cs</url>
-          <line>39</line>
+          <line>42</line>
           <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Trainer\TrainerService.cs" containingFunctionPresentation="Method 'UpdateAsync'">
             <startOffsets>
-              <option value="1734" />
+              <option value="1937" />
             </startOffsets>
             <endOffsets>
-              <option value="1760" />
+              <option value="1963" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Trainer/TrainerService.cs</url>
-          <line>105</line>
+          <line>108</line>
           <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Trainer\TrainerService.cs" containingFunctionPresentation="Method 'AsssignBadgeAsync'">
             <startOffsets>
-              <option value="4946" />
+              <option value="5149" />
             </startOffsets>
             <endOffsets>
-              <option value="4960" />
+              <option value="5163" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Trainer/TrainerService.cs</url>
-          <line>72</line>
+          <line>75</line>
           <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Trainer\TrainerService.cs" containingFunctionPresentation="Method 'GetAsync'">
             <startOffsets>
-              <option value="3380" />
+              <option value="3583" />
             </startOffsets>
             <endOffsets>
-              <option value="3394" />
+              <option value="3597" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="42" />
@@ -524,26 +636,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Game/GameService.cs</url>
-          <line>139</line>
+          <line>141</line>
           <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Game\GameService.cs" containingFunctionPresentation="Method 'FightAsync'">
             <startOffsets>
-              <option value="6454" />
+              <option value="6672" />
             </startOffsets>
             <endOffsets>
-              <option value="6512" />
+              <option value="6730" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Gym/GymService.cs</url>
-          <line>132</line>
+          <line>135</line>
           <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Gym\GymService.cs" containingFunctionPresentation="Method 'BossFight'">
             <startOffsets>
-              <option value="6425" />
+              <option value="6639" />
             </startOffsets>
             <endOffsets>
-              <option value="6453" />
+              <option value="6667" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="50" />
@@ -576,16 +688,94 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Gym/GymService.cs</url>
-          <line>158</line>
+          <line>164</line>
           <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Gym\GymService.cs" containingFunctionPresentation="Method 'BossFight'">
             <startOffsets>
-              <option value="7719" />
+              <option value="8114" />
             </startOffsets>
             <endOffsets>
-              <option value="7777" />
+              <option value="8172" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Game/GameService.cs</url>
+          <line>117</line>
+          <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Game\GameService.cs" containingFunctionPresentation="Method 'FightAsync'">
+            <startOffsets>
+              <option value="5538" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5559" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Game/GameService.cs</url>
+          <line>167</line>
+          <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Game\GameService.cs" containingFunctionPresentation="Method 'ResetAsync'">
+            <startOffsets>
+              <option value="8031" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8068" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Gym/GymService.cs</url>
+          <line>117</line>
+          <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Gym\GymService.cs" containingFunctionPresentation="Method 'StartBattleAsync'">
+            <startOffsets>
+              <option value="5478" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5518" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Gym/GymService.cs</url>
+          <line>77</line>
+          <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Gym\GymService.cs" containingFunctionPresentation="Method 'StartBattleAsync'">
+            <startOffsets>
+              <option value="3277" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3278" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Infrastructure/PokemonGameAPI.Infrastructure/Services/Gym/GymService.cs</url>
+          <line>181</line>
+          <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Infrastructure\PokemonGameAPI.Infrastructure\Services\Gym\GymService.cs" containingFunctionPresentation="Method 'ResetAsync'">
+            <startOffsets>
+              <option value="8922" />
+            </startOffsets>
+            <endOffsets>
+              <option value="8923" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Presentation/PokemonGameAPI.API/Controllers/TrainersController.cs</url>
+          <line>49</line>
+          <properties documentPath="C:\Users\ASUS\Desktop\PB501\HomeTasks\PokemonGameAPI\Presentation\PokemonGameAPI.API\Controllers\TrainersController.cs" containingFunctionPresentation="Method 'GetQuestsForTrainer'">
+            <startOffsets>
+              <option value="1610" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1630" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

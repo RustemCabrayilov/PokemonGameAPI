@@ -111,13 +111,15 @@ public class GameService(
     public async Task<BattleResultResponseDto> FightAsync(BattleResultRequestDto requestDto)
     {
         var pokemon1 = await GetReadyPokemonForTrainer(requestDto.Trainer1Id);
+        if (pokemon1 is null) throw new NotFoundException($"No battle-ready Pokémon found for Trainer {requestDto.Trainer1Id}");
         var pokemon2 = await GetReadyPokemonForTrainer(requestDto.Trainer2Id);
+        if (pokemon2 is null) throw new NotFoundException($"No battle-ready Pokémon found for Trainer {requestDto.Trainer2Id}");
         var battleResult = await _battleResultRepository.GetAll().FirstOrDefaultAsync(x => x.GameId == requestDto.GameId);
         if (pokemon1.HP <= 0)
         {
             battleResult.WinnerId = requestDto.Trainer2Id;
             battleResult.LooserId = requestDto.Trainer1Id;
-            pokemon1.PokemonLevel += new Random().Next(1,3);
+            pokemon1.PokemonLevel += 12;
             battleResult.WinnerDamages = requestDto.Trainer2Damages;
             battleResult.LooserDamages = requestDto.Trainer1Damages;
             _pokemonRepository.Update(pokemon2);
@@ -127,7 +129,7 @@ public class GameService(
         {
             battleResult.WinnerId = requestDto.Trainer1Id;
             battleResult.LooserId = requestDto.Trainer2Id;
-            pokemon1.PokemonLevel += new Random().Next(1,3);
+            pokemon1.PokemonLevel += 12;
             battleResult.WinnerDamages = requestDto.Trainer2Damages;
             battleResult.LooserDamages = requestDto.Trainer1Damages;
             _pokemonRepository.Update(pokemon1);
@@ -163,6 +165,7 @@ public class GameService(
         await _unitOfWork.SaveChangesAsync();
         var arena = await _arenaRepository.GetAll().FirstOrDefaultAsync(x=>x.GameId==requestDto.GameId);
         _arenaRepository.Remove(arena);
+       await _unitOfWork.SaveChangesAsync();
         return true;
     }
 }

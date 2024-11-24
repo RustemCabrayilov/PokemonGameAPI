@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using PokemonGameAPI.Application.Abstraction.Repository;
+using PokemonGameAPI.Application.Abstraction.Services.EvaluationPokemon;
 using PokemonGameAPI.Application.Abstraction.Services.Pokemon;
 using PokemonGameAPI.Application.Abstraction.UnitOfWork;
 using PokemonGameAPI.Domain.Entities;
@@ -130,15 +131,17 @@ public class PokemonService(
     {
         var entity = await _pokemonRepository.GetAsync(id);
         if (entity is null) throw new NotFoundException($"This {id} pokemon does not exist");
-        if (entity.PokemonLevel == entity.EvolutionLevel)
+        if (entity.PokemonLevel >= entity.EvolutionLevel)
         {
             entity.IsEvolution = true;
             _pokemonRepository.Update(entity);
             _unitOfWork.SaveChanges();
         }
+
         var outDto = _mapper.Map<PokemonResponseDto>(entity);
-        return outDto;   
+        return outDto;
     }
+
     public async Task<PokemonResponseDto> EvolutionUpdateAsync(Guid id)
     {
         var entity = await _pokemonRepository.GetAsync(id);
@@ -146,8 +149,9 @@ public class PokemonService(
         var evaluationPokemon = await _evaluationPokemonRepository.GetAll()
             .FirstOrDefaultAsync(x => x.PokemonId == entity.Id && x.EvolutionLevel == entity.EvolutionLevel);
         if (evaluationPokemon is null) throw new NotFoundException($"This {id} pokemon could not have evalutation");
-        _mapper.Map(evaluationPokemon, entity);
-        entity.EvolutionLevel = evaluationPokemon.EvolutionLevel*2;
+        var evolutionDto = _mapper.Map<EvolutionPokemonRequestDto>(evaluationPokemon);
+        _mapper.Map(evolutionDto, entity);
+        entity.EvolutionLevel = evaluationPokemon.EvolutionLevel * 2;
         _pokemonRepository.Update(entity);
         _unitOfWork.SaveChanges();
         var outDto = _mapper.Map<PokemonResponseDto>(entity);

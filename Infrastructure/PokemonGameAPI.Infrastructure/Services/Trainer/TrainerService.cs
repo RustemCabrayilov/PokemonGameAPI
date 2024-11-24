@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using PokemonGameAPI.Application.Abstraction.Repository;
 using PokemonGameAPI.Application.Abstraction.Services.Badge;
 using PokemonGameAPI.Application.Abstraction.Services.Pokemon;
+using PokemonGameAPI.Application.Abstraction.Services.Quest;
 using PokemonGameAPI.Application.Abstraction.Services.Trainer;
 using PokemonGameAPI.Application.Abstraction.UnitOfWork;
 using PokemonGameAPI.Domain.Entities;
@@ -18,6 +19,8 @@ public class TrainerService(
     IGenericRepository<Domain.Entities.Badge> _badgeRepository,
     IGenericRepository<Domain.Entities.PokemonTrainer> _pokemonTrainerRepository,
     IGenericRepository<Domain.Entities.BadgeTrainer> _badgeTrainerRepository,
+    IGenericRepository<Domain.Entities.QuestTrainer> _questTrainerRepository,
+    IGenericRepository<Domain.Entities.Quest> _questRepository,
     UserManager<AppUser> _userManager,
     IMapper _mapper,
     IUnitOfWork _unitOfWork): ITrainerService
@@ -117,4 +120,12 @@ public class TrainerService(
             .Where(badge => _badgeTrainerRepository.GetAll()
                 .Any(tp => tp.TrainerId == trainerId && tp.BadgeId == badge.Id)).ToListAsync();
     }
+
+    public async Task<List<QuestTrainerDto>> GetQuestsForTrainer(Guid trainerId)
+    {
+        var questList = await _questTrainerRepository.GetAll().Where(quest => quest.TrainerId == trainerId).ToListAsync();
+        var outDto = _mapper.Map<List<QuestTrainerDto>>(questList);       
+        return outDto;
+    }
+
 }

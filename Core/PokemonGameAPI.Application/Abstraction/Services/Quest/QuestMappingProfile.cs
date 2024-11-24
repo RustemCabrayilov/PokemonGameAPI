@@ -8,5 +8,6 @@ public class QuestMappingProfile:Profile
     {
         CreateMap<QuestRequestDto, Domain.Entities.Quest>();
         CreateMap<Domain.Entities.Quest, QuestResponseDto>();
+        CreateMap<Domain.Entities.QuestTrainer, QuestTrainerDto>();
     }
 }

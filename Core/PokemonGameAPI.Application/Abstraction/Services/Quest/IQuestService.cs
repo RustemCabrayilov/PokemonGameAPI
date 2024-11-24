@@ -7,6 +7,5 @@ public interface IQuestService
     Task<QuestResponseDto> RemoveAsync(Guid id);
     Task<QuestResponseDto> GetAsync(Guid id);
     Task<IList<QuestResponseDto>> GetAllAsync();
-    Task<QuestResponseDto> CheckQuestAsync(Guid id);
-    Task<QuestResponseDto> QuestUpdateAsync(Guid id);
+    Task CheckQuestAsync(Guid id);
 }
