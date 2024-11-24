@@ -9,6 +9,7 @@ public class Pokemon:BaseEntity
     public string Name { get; set; }
     public int PokemonLevel { get; set; } = 1;
     public int EvolutionLevel { get; set; }
+    public bool IsEvolution { get; set; }
     public int HP { get; set; }
     public int Attack { get; set; }
     public int Defense { get; set; }
@@ -19,8 +20,8 @@ public class Pokemon:BaseEntity
     public Category Category { get; set; }
     public Skill Skill { get; set; }
     public Guid SkillId { get; set; }
-    
     public List<PokemonTrainer> TrainerPokemons { get; set; }
     public List<GymLeaderPokemon> GymLeaderPokemon { get; set; }
+    public List<EvolutionPokemon> EvaluationPokemons { get; set; }
  
 }

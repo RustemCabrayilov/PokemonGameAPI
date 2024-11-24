@@ -57,4 +57,14 @@ public class QuestService(
         var outDtos = _mapper.Map<IList<QuestResponseDto>>(entities);
         return outDtos;
     }
+
+    public async Task<QuestResponseDto> CheckQuestAsync(Guid id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task<QuestResponseDto> QuestUpdateAsync(Guid id)
+    {
+        throw new NotImplementedException();
+    }
 }

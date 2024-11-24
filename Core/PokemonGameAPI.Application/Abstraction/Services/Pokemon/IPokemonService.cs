@@ -9,5 +9,7 @@ public interface IPokemonService
     Task<IList<PokemonResponseDto>> GetAllAsync();
     Task<PokemonResponseDto> Attack(Guid opponentId,int damage);
     Task<PokemonResponseDto> Defense(Guid defenderId);
-    Task<PokemonResponseDto> SetPokemonReady(Guid id);
+    Task<PokemonResponseDto> SetPokemonReady(Guid id); 
+    Task<PokemonResponseDto> CheckEvaluationAsync(Guid id);
+    Task<PokemonResponseDto> EvolutionUpdateAsync(Guid id);
 }

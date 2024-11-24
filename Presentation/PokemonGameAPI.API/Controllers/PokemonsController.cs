@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PokemonGameAPI.Application.Abstraction.Services.EvaluationPokemon;
 using PokemonGameAPI.Application.Abstraction.Services.Pokemon;
 
 namespace PokemonGameAPI.API.Controllers;
@@ -54,6 +55,19 @@ public class PokemonsController(IPokemonService _pokemonService) : ControllerBas
     public async Task<IActionResult> Defense(Guid defenderId)
     {
         var response = await _pokemonService.Defense(defenderId);
+        return Ok(response);
+    }
+
+    [HttpGet("check-evolution/{id}")]
+    public async Task<IActionResult> CheckEvaluation(Guid id)
+    {
+        var response = await _pokemonService.CheckEvaluationAsync(id);
+        return Ok(response);
+    }
+    [HttpGet("evaluate/{id}")]
+    public async Task<IActionResult> EvaluationUpdateAsync(Guid id)
+    {
+        var response = await _pokemonService.EvolutionUpdateAsync(id);
         return Ok(response);
     }
 }

@@ -29,7 +29,7 @@ public class CategoryService(IGenericRepository<Domain.Entities.Category> _categ
         var result =await _validator.ValidateAsync(dto);
         if (!result.IsValid) throw new ValidationException(result.Errors);
         var entity = await _categoryRepository.GetAsync(id);
-        if (entity is null) throw new NotFoundException("Entity not found");
+        if (entity is null) throw new NotFoundException("Category not found");
         _mapper.Map(dto,entity);
         _categoryRepository.Update(entity);
         _unitOfWork.SaveChanges();
@@ -50,6 +50,7 @@ public class CategoryService(IGenericRepository<Domain.Entities.Category> _categ
     public async Task<CategoryResponseDto> GetAsync(Guid id)
     {
       var entity =await _categoryRepository.GetAsync(id);
+      if (entity is null) throw new NotFoundException("Category not found");
       var outDto = _mapper.Map<CategoryResponseDto>(entity);
       return outDto;
     }

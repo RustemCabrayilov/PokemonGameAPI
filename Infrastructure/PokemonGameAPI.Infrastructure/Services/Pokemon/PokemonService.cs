@@ -13,6 +13,7 @@ public class PokemonService(
     IGenericRepository<Domain.Entities.Pokemon> _pokemonRepository,
     IGenericRepository<Domain.Entities.Skill> _skillRepository,
     IGenericRepository<Domain.Entities.Category> _categoryRepository,
+    IGenericRepository<Domain.Entities.EvolutionPokemon> _evaluationPokemonRepository,
     IMapper _mapper,
     IUnitOfWork _unitOfWork) : IPokemonService
 {
@@ -122,6 +123,34 @@ public class PokemonService(
         _pokemonRepository.Update(pokemon);
         _unitOfWork.SaveChanges();
         var outDto = _mapper.Map<PokemonResponseDto>(pokemon);
+        return outDto;
+    }
+
+    public async Task<PokemonResponseDto> CheckEvaluationAsync(Guid id)
+    {
+        var entity = await _pokemonRepository.GetAsync(id);
+        if (entity is null) throw new NotFoundException($"This {id} pokemon does not exist");
+        if (entity.PokemonLevel == entity.EvolutionLevel)
+        {
+            entity.IsEvolution = true;
+            _pokemonRepository.Update(entity);
+            _unitOfWork.SaveChanges();
+        }
+        var outDto = _mapper.Map<PokemonResponseDto>(entity);
+        return outDto;   
+    }
+    public async Task<PokemonResponseDto> EvolutionUpdateAsync(Guid id)
+    {
+        var entity = await _pokemonRepository.GetAsync(id);
+        if (entity is null) throw new NotFoundException($"This {id} pokemon does not exist");
+        var evaluationPokemon = await _evaluationPokemonRepository.GetAll()
+            .FirstOrDefaultAsync(x => x.PokemonId == entity.Id && x.EvolutionLevel == entity.EvolutionLevel);
+        if (evaluationPokemon is null) throw new NotFoundException($"This {id} pokemon could not have evalutation");
+        _mapper.Map(evaluationPokemon, entity);
+        entity.EvolutionLevel = evaluationPokemon.EvolutionLevel*2;
+        _pokemonRepository.Update(entity);
+        _unitOfWork.SaveChanges();
+        var outDto = _mapper.Map<PokemonResponseDto>(entity);
         return outDto;
     }
 }

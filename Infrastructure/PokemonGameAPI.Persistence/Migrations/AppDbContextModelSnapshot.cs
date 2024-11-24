@@ -307,6 +307,32 @@ namespace PokemonGameAPI.Persistence.Migrations
                     b.ToTable("Documents");
                 });
 
+            modelBuilder.Entity("PokemonGameAPI.Domain.Entities.EvaluationPokemon", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Attack")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Defense")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("PokemonId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PokemonId");
+
+                    b.ToTable("EvaluationPokemon");
+                });
+
             modelBuilder.Entity("PokemonGameAPI.Domain.Entities.Game", b =>
                 {
                     b.Property<Guid>("Id")
@@ -529,6 +555,9 @@ namespace PokemonGameAPI.Persistence.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Defense")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EvaluationCount")
                         .HasColumnType("int");
 
                     b.Property<int>("EvolutionLevel")
@@ -801,6 +830,17 @@ namespace PokemonGameAPI.Persistence.Migrations
                     b.Navigation("Gym");
                 });
 
+            modelBuilder.Entity("PokemonGameAPI.Domain.Entities.EvaluationPokemon", b =>
+                {
+                    b.HasOne("PokemonGameAPI.Domain.Entities.Pokemon", "Pokemon")
+                        .WithMany("EvaluationPokemons")
+                        .HasForeignKey("PokemonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pokemon");
+                });
+
             modelBuilder.Entity("PokemonGameAPI.Domain.Entities.Game", b =>
                 {
                     b.HasOne("PokemonGameAPI.Domain.Entities.Trainer", "Trainer1")
@@ -964,6 +1004,8 @@ namespace PokemonGameAPI.Persistence.Migrations
 
             modelBuilder.Entity("PokemonGameAPI.Domain.Entities.Pokemon", b =>
                 {
+                    b.Navigation("EvaluationPokemons");
+
                     b.Navigation("GymLeaderPokemon");
 
                     b.Navigation("TrainerPokemons");
